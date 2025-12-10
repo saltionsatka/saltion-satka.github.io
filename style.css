@@ -1,3 +1,37 @@
+/* Light Theme Variables */
+:root.light {
+  --bg: #f5f6fa;
+  --bg-alt: #ffffff;
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #4a4a4a;
+  --accent: #4b66ff;
+  --accent-soft: rgba(75,102,255,0.15);
+  --border-subtle: #d8d8d8;
+}
+
+/* Smooth Theme Transition */
+body, .section, .section-alt, .project-card, .skill-card, .timeline-content {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 50%;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--accent-soft);
+  transform: scale(1.08);
+}
+
 :root {
   --bg: #050509;
   --bg-alt: #0c0c12;
@@ -437,4 +471,5 @@ body {
   .hero-meta {
     flex-direction: column;
   }
+  
 }
