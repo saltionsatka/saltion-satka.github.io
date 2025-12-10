@@ -302,4 +302,139 @@ body {
 }
 
 .timeline-content {
-  background: linear-gradient(135deg, #14141f, #10
+  background: linear-gradient(135deg, #14141f, #101018);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  margin-left: 24px;
+  border: 1px solid var(--border-subtle);
+}
+
+.timeline-content h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.timeline-date {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* PROJECTS */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #14141f, #11111a);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: var(--shadow-soft);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #c6ceff;
+  text-decoration: none;
+}
+
+.project-link i {
+  font-size: 1rem;
+}
+
+/* CONTACT */
+
+.contact-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.contact-item {
+  background: linear-gradient(135deg, #14141f, #101019);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-item i {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.contact-item span {
+  font-size: 0.95rem;
+}
+
+.contact-item small {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  padding: 20px 14px 30px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* REVEAL ANIMATIONS */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .nav-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .nav nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+
+  .hero {
+    padding-top: 70px;
+  }
+
+  .hero-meta {
+    flex-direction: column;
+  }
+}
